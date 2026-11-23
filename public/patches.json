@@ -1,5 +1,23 @@
+
 {
-  "checked_at": null,
+  "checked_at": "2026-11-23",
   "source": "https://support.rockstargames.com/articles/sN5pEdFYZdlvijKXd6xpJ/grand-theft-auto-vi-launch-updates-ps5-xbox-series-x-or-s",
-  "patches": []
+  "patches": [
+    {
+      "id": "gta6-update-2026-11-23",
+      "date": "23 november 2026",
+      "version": "November 23, 2026 Update",
+      "category": "GENERAL / MISCELLANEOUS",
+      "url": "https://support.rockstargames.com/articles/sN5pEdFYZdlvijKXd6xpJ/grand-theft-auto-vi-launch-updates-ps5-xbox-series-x-or-s",
+      "notes": [
+        "Fixed several issues that caused the game to crash.",
+        "Fixed an issue that resulted in the weather not changing for extended periods.",
+        "Fixed an issue that resulted in the game not autosaving correctly.",
+        "Fixed several issues that resulted in phone calls not triggering correctly, including those that progressed the story or unlocked mission content.",
+        "Fixed an issue that resulted in the player being unable to lose their Wanted Level.",
+        "Fixed an issue that resulted in the player being unable to use the deadlift bar in the Gym.",
+        "Fixed an issue that resulted in partners not handing over bags so that players could sell them to fences."
+      ]
+    }
+  ]
 }
