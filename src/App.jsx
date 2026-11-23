@@ -41,8 +41,15 @@ export default function App() {
     const onVisible = () => {
       if (document.visibilityState === "visible") loadPatches();
     };
+    // Refresh patch data every five minutes while the page is open.
+    const refreshTimer = window.setInterval(() => {
+      if (document.visibilityState === "visible") loadPatches();
+    }, 5 * 60 * 1000);
     document.addEventListener("visibilitychange", onVisible);
-    return () => document.removeEventListener("visibilitychange", onVisible);
+    return () => {
+      window.clearInterval(refreshTimer);
+      document.removeEventListener("visibilitychange", onVisible);
+    };
   }, [loadPatches]);
 
   const filtered = useMemo(() => {
