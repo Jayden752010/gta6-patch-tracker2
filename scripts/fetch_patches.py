@@ -71,7 +71,7 @@ def main():
 
         date_obj = datetime.strptime(date, "%B %d, %Y")
         version_match = re.search(r"\bversion\s*([0-9]+(?:\.[0-9]+)+)\b", " ".join(notes), re.I)
-        version = f"Versie {version_match.group(1)}" if version_match else ""
+        version = f"{date_obj.strftime('%B')} {date_obj.day}, {date_obj.year} Update"
         title = category or "GTA VI-update"
         stable = f"{date}|{title}|{'|'.join(notes)}"
         patch_id = hashlib.sha1(stable.encode("utf-8")).hexdigest()[:16]
